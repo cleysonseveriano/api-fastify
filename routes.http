@@ -1,0 +1,25 @@
+POST http://localhost:3333/videos
+Content-type: application/json
+
+{
+    "title": "Despacito",
+    "url": "https://www.youtube.com/watch?v=kJQP7kiw5Fk"
+}
+
+###
+
+GET http://localhost:3333/videos?search=Olá
+
+###
+
+PUT http://localhost:3333/videos/:id
+Content-type: application/json
+
+{
+    "title": "Despacito Mexicano",
+    "url": "https://www.youtube.com/watch?v=kJQP7kiw5Fk"
+}
+
+###
+
+DELETE http://localhost:3333/videos/:id
